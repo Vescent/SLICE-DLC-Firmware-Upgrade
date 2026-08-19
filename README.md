@@ -9,13 +9,21 @@ Firmware for SLICE DLC models
  
   Left click on SLICE_Firmware_Update_Instructions.pdf and then click 'Download' to download the instructions for use.
 
-  The V1.42 firmware upgrader automatically retrieves the upgrade files from this repository. However, if your system does not allow this,  
+  The V1.44 firmware upgrader automatically retrieves the upgrade files from this repository. However, if your system does not allow this,  
   You may need to perform the following steps:  
   
        Left click on the upgrade package (SLICE-DLC_Sx.xx_DCx.xx_QTx.xx.zip) and then click 'Download' to download the firmware package to your  
        hard drive.
   
        The 3 files in the .zip file need to be placed in the folder described in the instructions. DO NOT RENAME THEM!  
+
+## Configuration S1.250_DC1.44_QT2.73 
+	1. Adds calibration for DC Board Lazer Current Limit
+	2. Adds serial streaming of temperature control error graph data, Current Data, Temperature measurement data for debugging and logging purposes
+	3. Fixes JIRA SDLC_36 Open Circuit Error cannot be cleared issue
+	4. Fixes JIRA SDLC_37 Incorrect sub model reported by *IDN? API command on DLC-200 models. No sub-model shown on general settings screen
+	5. Fixes JIRA SDLC_38 Auto Tune progress bar and percentage value stay at 0% during auto tune
+
 
 ## Configuration S1.247_DC1.41_QT2.72 
 	1. Adds CE excessive internal temperature interlock
